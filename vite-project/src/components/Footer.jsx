@@ -1,5 +1,3 @@
-import { FolderGit } from 'lucide-react'
-
 function Footer() {
   return (
     <footer className="site-footer">

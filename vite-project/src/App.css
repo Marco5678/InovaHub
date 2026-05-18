@@ -9,8 +9,8 @@
 .hero-section,
 .section,
 .site-footer {
-  width: min(1120px, calc(100% - 40px));
-  margin-inline: auto;
+  width: 100%;
+  padding-inline: max(20px, calc((100% - 1120px) / 2));
 }
 
 .site-header {
@@ -160,7 +160,8 @@
   grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.8fr);
   gap: var(--space-8);
   align-items: center;
-  padding: 72px 0 44px;
+  padding-top: 72px;
+  padding-bottom: 44px;
 }
 
 .hero-content {
@@ -321,7 +322,22 @@
 }
 
 .section {
-  padding: 58px 0;
+  padding-top: 58px;
+  padding-bottom: 58px;
+}
+
+.services-section {
+  background: rgba(255, 255, 255, 0.46);
+}
+
+.highlight-section {
+  background:
+    linear-gradient(90deg, rgba(204, 251, 241, 0.42), rgba(255, 243, 207, 0.46)),
+    #f8faf8;
+}
+
+.workflow-section {
+  background: #ffffff;
 }
 
 .section-heading {
@@ -539,8 +555,10 @@
   display: flex;
   justify-content: space-between;
   gap: var(--space-4);
-  padding: var(--space-5) 0 var(--space-6);
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-6);
   border-top: 1px solid var(--color-border);
+  background: #ffffff;
 }
 
 .site-footer div:first-child {
@@ -566,7 +584,7 @@
   .hero-section,
   .section,
   .site-footer {
-    width: min(100% - 28px, 1120px);
+    padding-inline: 14px;
   }
 
   .nav-links,
@@ -643,7 +661,8 @@
 
   .hero-section,
   .section {
-    padding: 38px 0;
+    padding-top: 38px;
+    padding-bottom: 38px;
   }
 
   .hero-content h1 {
